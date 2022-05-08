@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap 5 design" />
+    <title>bootstrap5_template_three</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- start control box -->
+    <div class="control-box">
+      <div
+        class="icon text-white p-2 position-fixed start-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#controlbox"
+        aria-controls="controlbox"
+      >
+        <i class="fa-solid fa-gear fa-spin"></i>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="controlbox"
+        aria-labelledby="controlboxLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="controlboxLabel">Control Box</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body text-center">
+          <!-- color options -->
+          <div class="color-options p-3">
+            <span>Colors</span>
+            <ul class="list-unstyled mb-0 mt-2">
+              <li class="list-inline-item" data-color="#ff9800"></li>
+              <li class="list-inline-item" data-color="#E91E63"></li>
+              <li class="list-inline-item" data-color="#009688"></li>
+              <li class="list-inline-item" data-color="#03A9F4"></li>
+              <li class="list-inline-item" data-color="#4CAF50"></li>
+            </ul>
+          </div>
+          <!-- background options -->
+          <div class="background-options p-3 mt-2">
+            <span>Random Backgrounds</span>
+            <div class="mt-2">
+              <div class="badge fs-6 px-3 py-2">Yes</div>
+              <div class="badge fs-6 px-3 py-2">No</div>
+            </div>
+          </div>
+          <!-- Bullets options -->
+          <div class="bullets-options p-3 mt-2">
+            <span>Show Bullets</span>
+            <div class="mt-2">
+              <div class="badge fs-6 px-3 py-2">Yes</div>
+              <div class="badge fs-6 px-3 py-2">No</div>
+            </div>
+          </div>
+          <!-- reset options -->
+          <div class="reset p-3 mt-2">
+            <button class="btn btn-danger">Reset Options</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end control box -->
+
+    <!-- start bullets -->
+    <div class="bullets position-fixed top-50 end-0 translate-middle-y">
+      <a href="#about"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="About Us"
+        ></div
+      ></a>
+      <a href="#skills"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Our Skills"
+        ></div
+      ></a>
+      <a href="#gallery"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Our Gallery"
+        ></div
+      ></a>
+      <a href="#timeline"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Time Line"
+        ></div
+      ></a>
+      <a href="#features"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Features"
+        ></div
+      ></a>
+      <a href="#testimonials"
+        ><div
+          class="bullet m-3 rounded-circle"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Testimonials"
+        ></div
+      ></a>
+    </div>
+    <!-- end bullets -->
+
+    <!-- start navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3"
+      id="navbar-example"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">Special Design</a>
+        <button
+          class="navbar-toggler border shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white fs-4"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav position-relative">
+            <li class="nav-item">
+              <a class="nav-link text-white px-3 active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#timeline">TimeLine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-3" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start landing -->
+    <div
+      class="landing vh-100 d-flex align-items-center position-relative"
+      id="home"
+    >
+      <div class="container text-center text-white">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p class="lead mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          odit nihil ullam nesciunt quidem iste
+        </p>
+      </div>
+    </div>
+    <!-- end landing -->
+
+    <!-- start about us -->
+    <div class="about-us text-center text-lg-start" id="about">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-8">
+            <div class="box">
+              <h2 class="fw-bold main-heading position-relative pb-3">
+                About Us
+              </h2>
+              <p class="text-muted m-auto m-lg-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam soluta facere culpa, suscipit similique dicta beatae
+                commodi libero quis mollitia ipsa accusamus molestiae enim
+                quibusdam unde corporis ratione modi. Atque!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">
+              <img src="imgs/about-us.jpg" class="img-fluid" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about us -->
+
+    <!-- start our skills -->
+    <div class="our-skills" id="skills">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5 main-heading position-relative pb-3"
+        >
+          Our Skills
+        </h2>
+        <div class="skills">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <!-- first col -->
+            <div class="col">
+              <!-- first skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">HTML</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- second skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">CSS</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- third skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">JavaScript</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second col -->
+            <div class="col">
+              <!-- first skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">Bootstrap</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- second skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">React.js</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- third skill -->
+              <div class="skill bg-white mt-3 p-3 rounded-3">
+                <div class="row align-items-center">
+                  <div class="col-md-3 col-xl-2">
+                    <span class="fw-bold">Git</span>
+                  </div>
+                  <div class="col-md-9 col-xl-10 mt-2 mt-md-0">
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our skills -->
+
+    <!-- start our gallery -->.
+    <div class="gallery" id="gallery">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5 main-heading position-relative pb-3"
+        >
+          Our Gallery
+        </h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center"
+        >
+          <div class="col p-2">
+            <img
+              src="imgs/04.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_1"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/05.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_2"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/06.png"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_3"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/07.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_4"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/08.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_5"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/09.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_6"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/10.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_7"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/01.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_8"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/02.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_9"
+            />
+          </div>
+          <div class="col p-2">
+            <img
+              src="imgs/03.jpg"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imgmodal"
+              alt="img_10"
+            />
+          </div>
+        </div>
+        <!-- start modal -->
+        <div
+          class="modal fade"
+          id="imgmodal"
+          tabindex="-1"
+          aria-labelledby="imgmodalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imgmodalLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="" class="img-fluid" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end modal -->
+      </div>
+    </div>
+    <!-- end our gallery -->
+
+    <!-- start timeline -->
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <div class="item position-relative py-4">
+          <span class="d-block rounded text-white px-2 py-1 m-auto">2020</span>
+          <div
+            class="left me-lg-auto bg-white mt-5 position-relative py-3 px-4"
+          >
+            <h3>Testing Heading</h3>
+            <p class="m-0 mt-3 text-muted">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, sunt nesciunt rem pariatur laboriosam neque aut
+              assumenda, earum ullam laborum officiis doloribus perspiciatis
+              officia provident autem deleniti nemo repellat eius!
+            </p>
+          </div>
+          <div
+            class="right ms-lg-auto bg-white mt-5 position-relative py-3 px-4"
+          >
+            <h3>Testing Heading</h3>
+            <p class="m-0 mt-3 text-muted">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, sunt nesciunt rem pariatur laboriosam neque aut
+              assumenda, earum ullam laborum officiis doloribus perspiciatis
+              officia provident autem deleniti nemo repellat eius!
+            </p>
+          </div>
+        </div>
+        <div class="item position-relative py-4">
+          <span class="d-block rounded text-white px-2 py-1 m-auto">2020</span>
+          <div
+            class="left me-lg-auto bg-white mt-5 position-relative py-3 px-4"
+          >
+            <h3>Testing Heading</h3>
+            <p class="m-0 mt-3 text-muted">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, sunt nesciunt rem pariatur laboriosam neque aut
+              assumenda, earum ullam laborum officiis doloribus perspiciatis
+              officia provident autem deleniti nemo repellat eius!
+            </p>
+          </div>
+          <div
+            class="right ms-lg-auto bg-white mt-5 position-relative py-3 px-4"
+          >
+            <h3>Testing Heading</h3>
+            <p class="m-0 mt-3 text-muted">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, sunt nesciunt rem pariatur laboriosam neque aut
+              assumenda, earum ullam laborum officiis doloribus perspiciatis
+              officia provident autem deleniti nemo repellat eius!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end timeline -->
+
+    <!-- start our features -->
+    <div class="our-features" id="features">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5 main-heading position-relative pb-3"
+        >
+          Our Features
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_01.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_02.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_03.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_04.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_05.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="feat text-center">
+              <img src="imgs/Icon_06.png" alt="" />
+              <h3 class="m-0 my-3 pb-3 position-relative">Development</h3>
+              <p class="m-0 text-muted">
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our features -->
+
+    <!-- start testimonials -->
+    <div class="testimonials position-relative" id="testimonials">
+      <div class="container">
+        <h2 class="text-white fw-bold mb-3">Testimonials</h2>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center"
+        >
+          <div class="col p-2">
+            <div class="item bg-white p-4 rounded">
+              <p class="description fst-italic text-muted m-0">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing
+              </p>
+              <div class="user d-flex align-items-center gap-4 my-4">
+                <img
+                  src="imgs/Avatar_1.png"
+                  class="img-thumbnail rounded-circle"
+                  alt="img"
+                />
+                <div class="info">
+                  <div class="name fw-bold">Ahmed Mosaad</div>
+                  <div class="title text-muted">CEO At Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="item bg-white p-4 rounded">
+              <p class="description fst-italic text-muted m-0">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing
+              </p>
+              <div class="user d-flex align-items-center gap-4 my-4">
+                <img
+                  src="imgs/Avatar_2.png"
+                  class="img-thumbnail rounded-circle"
+                  alt="img"
+                />
+                <div class="info">
+                  <div class="name fw-bold">Aya Ibrahim</div>
+                  <div class="title text-muted">CEO At Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="item bg-white p-4 rounded">
+              <p class="description fst-italic text-muted m-0">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing
+              </p>
+              <div class="user d-flex align-items-center gap-4 my-4">
+                <img
+                  src="imgs/Avatar_3.png"
+                  class="img-thumbnail rounded-circle"
+                  alt="img"
+                />
+                <div class="info">
+                  <div class="name fw-bold">Sherief Ashraf</div>
+                  <div class="title text-muted">CEO At Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end testimonials -->
+
+    <!-- start contact us -->
+    <div class="contact-us position-relative">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5 main-heading position-relative pb-3"
+        >
+          Contact Us
+        </h2>
+        <form action="">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col p-2">
+              <input
+                class="form-control mb-3"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="form-control mb-3"
+                type="text"
+                placeholder="Your Phone"
+              />
+              <input
+                class="form-control mb-3"
+                type="email"
+                placeholder="Your Email"
+              />
+              <input class="form-control" type="text" placeholder="Subject" />
+            </div>
+            <div class="col p-2">
+              <textarea
+                class="form-control mb-3"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="submit" class="btn btn-primary w-100" value="Send" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end contact us -->
+
+    <!-- start footer -->
+    <footer class="text-white bg-dark p-4 text-center">
+      <div>Created With Love By Osama Elzero</div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
