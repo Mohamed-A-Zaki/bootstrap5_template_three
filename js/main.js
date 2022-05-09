@@ -146,7 +146,7 @@ function random_background_fun() {
       let random_image =
         images_arr[Math.floor(Math.random() * images_arr.length)];
       // set random image
-      landing_section.style.cssText = `background-image: url(../imgs/${random_image})`;
+      landing_section.style.cssText = `background-image: url(./imgs/${random_image})`;
       // clrear if random_background == false
       if (random_background === "false") clearInterval(count);
     }, 2500);
